@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Guide Generator - Error</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <style>
+        .error-container {
+            text-align: center;
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .error-message {
+            color: #dc3545;
+            background-color: #f8d7da;
+            padding: 1rem;
+            border-radius: 5px;
+            margin: 2rem 0;
+        }
+        
+        .home-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        .home-link:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Travel Guide Generator</h1>
+    </header>
+
+    <div class="container">
+        <div class="error-container">
+            <h2>Oops! Something Went Wrong</h2>
+            <div class="error-message">
+                <p><%= message %></p>
+            </div>
+            <p>Please try again later or contact support if the problem persists.</p>
+            <a href="/" class="home-link">Return to Home</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Travel Guide Generator. All rights reserved.</p>
+    </footer>
+</body>
+</html>
